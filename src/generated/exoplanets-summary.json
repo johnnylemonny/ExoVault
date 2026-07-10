@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T23:09:34.352Z",
+  "generatedAt": "2026-07-10T23:14:27.835Z",
   "source": {
     "csvFile": "data/raw/nasa-exoplanets-ps.csv",
     "csvUrl": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+pl_name,hostname,default_flag,discoverymethod,disc_year,disc_facility,sy_snum,sy_pnum,pl_orbper,pl_orbsmax,pl_rade,pl_bmasse,pl_eqt,pl_insol,sy_dist,st_teff,st_rad,st_mass,st_spectype,releasedate,rowupdate+from+ps+where+default_flag=1&format=csv",
