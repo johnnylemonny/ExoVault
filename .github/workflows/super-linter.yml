@@ -27,6 +27,8 @@ jobs:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_ALL_CODEBASE: false
+          # Exclude generated/raw data files from linting
+          FILTER_REGEX_EXCLUDE: '.*(public/data/|src/generated/|data/raw/).*'
           # Essential linters (Enabling these implicitly disables all others)
           VALIDATE_JSON: true
           VALIDATE_YAML: true
