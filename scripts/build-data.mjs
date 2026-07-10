@@ -9,7 +9,7 @@ const rawDir = path.join(rootDir, "data", "raw");
 const rawCsvPath = path.join(rawDir, "nasa-exoplanets-ps.csv");
 const summaryOutputPath = path.join(rootDir, "src", "generated", "exoplanets-summary.json");
 const publicOutputPath = path.join(rootDir, "public", "data", "exoplanets-data.json");
-const csvUrl = "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+*+from+ps&format=csv";
+const csvUrl = "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+pl_name,hostname,default_flag,discoverymethod,disc_year,disc_facility,sy_snum,sy_pnum,pl_orbper,pl_orbsmax,pl_rade,pl_bmasse,pl_eqt,pl_insol,sy_dist,st_teff,st_rad,st_mass,st_spectype,releasedate,rowupdate+from+ps+where+default_flag=1&format=csv";
 const DISTANCE_PC_TO_LY = 3.26156;
 
 function toNumber(value) {
